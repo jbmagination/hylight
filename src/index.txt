@@ -20,6 +20,6 @@
     <body>
         <h1><i>hey there :)</i></h1>
         <h2>while i work on this site, check out my <a href="randomcountry">random country name generator</a> <br />
-        <a href="src/index.txt">expert mode</a></h2>
+        <a href="src/index.expert">expert mode</a></h2>
     </body>
 </html>
