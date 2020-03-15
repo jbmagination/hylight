@@ -11,6 +11,6 @@ random = [
     "i love you"
 ]
 
-randomRsp = "#{randomRsp[Math.floor(Math.random() * randomRsp.length)]}"
+randomRsp = "#{random[Math.floor(Math.random() * random.length)]}"
 
 source.innerHTML = "#{randomRsp}"
