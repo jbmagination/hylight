@@ -1,0 +1,99 @@
+<html>
+    <head>
+    </head>
+    <style>
+        p {
+            margin: 15px 0;
+        width: fit-content;
+	    font-weight: 100;
+	    font-size: 18px;
+        line-height: 25px;
+        
+        }
+
+        h1, h2 {
+            margin: 15px 0;
+        width: fit-content;
+	    font-weight: 100;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: rgba(166, 216, 255, 0.2);
+	        
+        }
+
+        .d {
+            background-color: red;
+            color: white;
+        }
+
+        .u {
+            background-color: rgba(37, 69, 79, 0.2);
+            color: black;
+        }
+
+        .shard {
+            background-color: #cc85ff;
+            color: black;
+        }
+
+        .new {
+            background-color: #17c250;
+            color: white;
+        }
+
+        .channel, .param {
+            background-color: #274573;
+            color: white;
+        }
+
+        .command {
+            background-color: #426b31;
+            color: white;
+        }
+    </style>
+    <body>
+        <h1>OneBot API</h1>
+        <p class="d">properties/functions in red are deprecated and/or not meant for use.</p>
+        <p class="param">channels and parameters are shown in blue</p>
+        <p class="new">replacements/to use instead are shown in green</p> 
+        <p class="d">shard is deprecated.</p> <br />
+
+        <h2>Default API (--api [cmd], channel: <span class="channel">api_main</span>)</h2>
+        <p><span class="d">ping:</span> Shows the ping of the api servers.</p>
+        <p><span class="param">parameters:</span> empty, all, mains, backplate, fallback, <span class="d">shard</span>.</p>
+        <p><span class="new">replacement:</span> --status</p> <br />
+        
+        <p><span class="u">user:</span> Request the properties of yourself.</p>
+        <p><span class="param">parameters:</span> id, username, tag</p> <br />
+        
+        <p><span class="d">properties:</span> Request API properties (main channel only)</p>
+        <p><span class="param">parameters:</span> help, list, version</p>
+        <p><span class="new">replacement:</span> --api apiprops</p> <br />
+
+        <p><span class="u">apiprops:</span> API Properties, status and channel</p>
+        <p><span class="param">parameters:</span> mains, backplate, fallback, <span class="d">shard</span>.</p> <br />
+
+        <h2>Backplate API (--api-b[cmd], channel: <span class="channel">api_backplate</span>)</h2>
+        <p>The Backplate is using a <span class="command">command handler</span>, rather than one file with else if.</p>
+        
+        <p><span class="d">ping:</span> Shows the ping of the backplate api server.</p>
+        <p><span class="new">replacement:</span> --status</p> <br />
+
+        <p><span class="d">properties:</span> Request API Properties (backplate only)</p>
+        <p><span class="param">parameters:</span> list</p>
+        <p><span class="new">replacement:</span> none</p> <br />
+
+        <p><span class="u">user:</span> Request the properties of yourself.</p>
+        <p><span class="param">parameters:</span> id, username, tag</p> <br />
+
+        <h2>Fallback API (--api-f[cmd], channel: <span class="channel">api_main (backplate-fallback)</span>)</h2>
+        <p>The fallback API is using a <span class="command">command handler</span>, rather than one file with else if.</p>
+        <p>The fallback API uses an <span class="d">older version of the api</span>. Please keep that in mind when using it.</p>
+        <p>All command are <span class="channel">currently the same as the backplate</span>. However, the properties are fallback rather than backplate.</p> <br />
+
+        <h2><span class="shard">shard</span> (channel: <span class="shard">shard_element</span>)</h2>
+        <p>Shard is <span class="d">deprecated</span>.</p>
+    </body>
+</html>
