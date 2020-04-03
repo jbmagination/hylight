@@ -1,0 +1,84 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <style>
+        h1, h2, h3, h4, h5, h6, p, a {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        pre {
+            background-color:whitesmoke;
+        }
+
+        /* Style buttons */
+        .btn {
+            background-color: #34eb43;
+            border: none;
+            color: white;
+            padding: 12px 30px;
+            cursor: pointer;
+            font-size: 20px;
+        }
+
+/* Darker background on mouse-over */
+        .btn:hover {
+            background-color: #07610e;
+        }
+
+        .alert {
+            color: red;
+        }
+
+        
+    </style>
+    <body>
+        <h1>hylight - the simpliest programming language ever.</h1>
+        <a href="./download.zip"><button class="btn"><i class="fa fa-download"></i> Download Stable</button></a> <a href="./download.zip"><button class="btn"><i class="fa fa-download"></i> Download Latest</button></a> <br />
+        <h3>hylight an extremely simplified version of HTML - you are quite literally writing in plain english. <br />
+        the hylight converter is written purely in javascript.</h3>
+        <h1>lets get straight to the point - you want to learn how to use it.</h1>
+        <h2>first you need to install a build. by using one the download buttons above.</h2>
+        <h2>after this, install a node.js build from <a href="node.js.org">node.js.org.</a> <span class="alert">minimum v11.12.0.</span></h2>
+        <h2>first create a file called index.hyl</h2>
+        <h2>formatting</h2>
+        <h3>hylight is formatted in the following way:</h3>
+        <pre style="height: 60px;"><br />tag data/string<br />tag data/string</pre>
+        <h3>IMPORTANT - "ENTER" IS REQUIRED BETWEEN TAGS (SHOWN ABOVE)</h3>
+        <h3>for example, if you wanted a <a href="https://www.w3schools.com/tags/tag_hn.asp">heading 1</a> saying "hello there", you would do the following:</h3>
+        <pre style="height: 50px;"><br />h1 hello there</pre>
+        <img src="screenshot1.png">
+
+        <h2 style="color: red;">IMPORTANT - HOW TO CONVERT .HYL TO .HTML</h2>
+        <h3>Run convert.bat and then open index.html</h3>
+        <img src="gif1.gif"> 
+        
+        <h2>Headings</h2>
+        <h3>Headings look like this:</h3>
+        <h1>hello</h1>
+        <h2>hello</h2>
+        <h3>hello</h3>
+        <h4>hello</h4>
+        <h5>hello</h5>
+        <h6>hello</h6>
+
+        <pre style="height: 50px;"><br />h1 hello</pre>
+        <h3>replace 1 with anything 1-6</h3>
+
+        <h2>Paragraphs</h2>
+        <h3>Paragraphs look like this:</h3>
+        <p>hello</p>
+        <pre style="height: 50px;"><br>p hello</pre>
+
+        <h2>Images</h2>
+        <pre style="height: 50px;"><br>img src</pre>
+        <h3>Replace src with a link or a directory, eg ./test.png</h3>
+
+        <h2><sub>subscript</sub> and <sup>supscript</sup></h2>
+        <pre style="height: 60px;"><br>sub hello<br>sup hello</pre>
+        
+        <h2>Break Statements</h2>
+        <h3>Break statements can be done in two different ways</h3>
+        <pre style="height: 60px;"><br>br<br>break</pre>
+    </body>
+</html>
