@@ -34,10 +34,12 @@
     </style>
     <body>
         <h1>hylight - the simplest programming language ever.</h1>
-        <a href="https://github.com/sudocode1/hylight/archive/master.zip"><button class="btn"><i class="fa fa-download"></i> Download Stable</button></a> <a href="https://github.com/sudocode1/hylight/archive/prebuild.zip"><button class="btn"><i class="fa fa-download"></i> Download Latest</button></a> <br />
+        <h2>v1.2 Released! (stable)</h2>
+        <a href="https://github.com/sudocode1/hylight/archive/master.zip"><button class="btn"><i class="fa fa-download"></i> Download Stable</button></a> <a href="https://github.com/sudocode1/hylight/archive/master.zip"><button class="btn"><i class="fa fa-download"></i> Download Latest</button></a> <br />
         <h3>hylight an extremely simplified version of HTML - you are quite literally writing in plain english. <br />
         the hylight converter is written purely in javascript.</h3>
         <h1>lets get straight to the point - you want to learn how to use it.</h1>
+        <h2 class="alert">any functions (eg h1, p, image) in red is buggy or deprecated</h2>
         <h2>first you need to install a build. by using one the download buttons above.</h2>
         <h2>after this, install a node.js build from <a href="https://node.js.org">node.js.org.</a> <span class="alert">minimum v11.12.0.</span></h2>
         <h2>first create a file called index.hyl</h2>
@@ -53,7 +55,7 @@
         <h3>Run convert.bat and then open index.html</h3>
         <img src="gif1.gif"> 
         
-        <h2>Headings</h2>
+        <h2>Headings (v1.0)</h2>
         <h3>Headings look like this:</h3>
         <h1>hello</h1>
         <h2>hello</h2>
@@ -65,20 +67,37 @@
         <pre style="height: 50px;"><br />h1 hello</pre>
         <h3>replace 1 with anything 1-6</h3>
 
-        <h2>Paragraphs</h2>
+        <h2>Paragraphs (v1.0)</h2>
         <h3>Paragraphs look like this:</h3>
         <p>hello</p>
         <pre style="height: 50px;"><br>p hello</pre>
 
-        <h2>Images</h2>
+        <h2>Images (v1.0)</h2>
         <pre style="height: 50px;"><br>image src</pre>
         <h3>Replace src with a link or a directory, eg ./test.png</h3>
 
-        <h2><sub>subscript</sub> and <sup>supscript</sup></h2>
+        <h2><sub>subscript (v1.0)</sub> and <sup>supscript</sup></h2>
         <pre style="height: 60px;"><br>sub hello<br>sup hello</pre>
         
-        <h2>Break Statements</h2>
+        <h2>Break Statements (v1.0)</h2>
         <h3>Break statements can be done in two different ways</h3>
         <pre style="height: 60px;"><br>br<br>break</pre>
+
+        <h2>Audio (v1.2)</h2>
+        <h3>Audio is based on what type you are using - MP3 or OGG</h3>
+        <h3>MP3:</h3>
+        <pre style="height: 50px;"><br>audio(mp3) ./name.mp3</pre>
+        <h3>OGG:</h3>
+        <pre style="height: 50px;"><br>audio(ogg) ./name.ogg</pre>
+
+        <h2>Right to left text (v1.2)</h2>
+        <pre style="height: 50px;"><br>bdo [text]</pre>
+
+        <h2><span class="alert">iFrame Support</span> (v1.2)</h2>
+        <h3 class="alert">iFrames are pretty bugged right now but sometimes they do work</h3>
+        <h3>You need to specify a link including the http type.</h3>
+        <pre style="height: 50px;"><br>iframe https://youtube.com</pre>
+
+
     </body>
 </html>
