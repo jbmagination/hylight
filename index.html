@@ -1,32 +1,116 @@
-<!DOCTYPE html5>
 <html>
     <head>
-        <link rel="stylesheet" src="src/css/styles.css">
-        <title>justgone.uk</title>
-        <style>
-            h1, h2, h3, h4, h5, h6, a, p {
-                font-family: 'Arial', sans-serif;
-                color:white;
-            }
-            html { 
-                background: url("media/bg.gif") no-repeat center center fixed; 
-                -webkit-background-size: cover;
-                -moz-background-size: cover;
-                -o-background-size: cover;
-                background-size: cover;
-            }
-        </style>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta data-react-helmet="true" property="og:description" content="a very super epic website">
-        <meta data-react-helmet="true" name="description" content="a very super epic website">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
-    <body>
-        <script type="text/javascript" src="coffeescript/coffeescript.js"></script>
-        <script src="coffeescript/random.coffee" type="text/coffeescript"></script>
+    <style>
+        h1, h2, h3, h4, h5, h6, p, a {
+            font-family: Arial, Helvetica, sans-serif;
+        }
 
-        <h1 id="random"></h1>
-        <h2>while i work on this site, check out my <a href="randomcountry">random country name generator</a> <br /> <br />
-            
-        wanna see the code? try <a href="src/index.txt">expert mode</a> or look at the source code on <a href="https://github.com/sudocode1/justgone.uk">github</a></h2>
+        pre {
+            background-color:whitesmoke;
+        }
+
+        /* Style buttons */
+        .btn {
+            background-color: #34eb43;
+            border: none;
+            color: white;
+            padding: 12px 30px;
+            cursor: pointer;
+            font-size: 20px;
+        }
+
+/* Darker background on mouse-over */
+        .btn:hover {
+            background-color: #07610e;
+        }
+
+        .alert {
+            color: red;
+        }
+
+        
+    </style>
+    <body>
+        <h1>hylight - the simplest programming language ever.</h1>
+        <h2>v1.5 Released! (stable)</h2>
+        <a href="https://github.com/sudocode1/hylight/archive/master.zip"><button class="btn"><i class="fa fa-download"></i> Download Stable</button></a> <a href="https://github.com/sudocode1/hylight/archive/master.zip"><button class="btn"><i class="fa fa-download"></i> Download Latest</button></a> <br />
+        <h2>v1.5 now supports <a href="https://justgone.uk/hylight/hss">hss!</a></h2>
+        <h3>hylight an extremely simplified version of HTML - you are quite literally writing in plain english. <br />
+        the hylight converter is written purely in javascript.</h3>
+        <h1>lets get straight to the point - you want to learn how to use it.</h1>
+        <h2 class="alert">any functions (eg h1, p, image) in red is buggy or deprecated</h2>
+        <h2>first you need to install a build. by using one the download buttons above.</h2>
+        <h2>after this, install a node.js build from <a href="https://node.js.org">node.js.org.</a> <span class="alert">minimum v11.12.0.</span></h2>
+        <h2>first create a file called index.hyl</h2>
+        <h2>formatting</h2>
+        <h3>hylight is formatted in the following way:</h3>
+        <pre style="height: 60px;"><br />tag data/string<br />tag data/string</pre>
+        <h3>IMPORTANT - "ENTER" IS REQUIRED BETWEEN TAGS (SHOWN ABOVE)</h3>
+        <h3>for example, if you wanted a <a href="https://www.w3schools.com/tags/tag_hn.asp">heading 1</a> saying "hello there", you would do the following:</h3>
+        <pre style="height: 50px;"><br />h1 hello there</pre>
+        <img src="screenshot1.png">
+
+        <h2 style="color: red;">IMPORTANT - HOW TO CONVERT .HYL TO .HTML</h2>
+        <h3>Run convert.bat and then open index.html</h3>
+        <img src="gif1.gif"> 
+        
+        <h2>Headings (v1.0)</h2>
+        <h3>Headings look like this:</h3>
+        <h1>hello</h1>
+        <h2>hello</h2>
+        <h3>hello</h3>
+        <h4>hello</h4>
+        <h5>hello</h5>
+        <h6>hello</h6>
+
+        <pre style="height: 50px;"><br />h1 hello</pre>
+        <h3>replace 1 with anything 1-6</h3>
+
+        <h2>Paragraphs (v1.0)</h2>
+        <h3>Paragraphs look like this:</h3>
+        <p>hello</p>
+        <pre style="height: 50px;"><br>p hello</pre>
+
+        <h2>Images (v1.0)</h2>
+        <pre style="height: 50px;"><br>image src</pre>
+        <h3>Replace src with a link or a directory, eg ./test.png</h3>
+
+        <h2><sub>subscript (v1.0)</sub> and <sup>supscript</sup></h2>
+        <pre style="height: 60px;"><br>sub hello<br>sup hello</pre>
+        
+        <h2>Break Statements (v1.0)</h2>
+        <h3>Break statements can be done in two different ways</h3>
+        <pre style="height: 60px;"><br>br<br>break</pre>
+
+        <h2>Audio (v1.2)</h2>
+        <h3>Audio is based on what type you are using - MP3 or OGG</h3>
+        <h3>MP3:</h3>
+        <pre style="height: 50px;"><br>audio(mp3) ./name.mp3</pre>
+        <h3>OGG:</h3>
+        <pre style="height: 50px;"><br>audio(ogg) ./name.ogg</pre>
+
+        <h2>Right to left text (v1.2)</h2>
+        <pre style="height: 50px;"><br>bdo [text]</pre>
+
+        <h2><span class="alert">iFrame Support</span> (v1.2)</h2>
+        <h3 class="alert">iFrames are pretty bugged right now but sometimes they do work</h3>
+        <h3>You need to specify a link including the http type.</h3>
+        <pre style="height: 50px;"><br>iframe https://youtube.com</pre>
+        
+        <h2>Video (v1.3)</h2>
+        <h3>Video is currently only supported in mp4 format.</h3>
+        <pre class="height: 50px;"><br>video ./name.mp4</pre>
+
+        <h2>International Language (v1.3)</h2>
+        <h3>International Character Support</h3>
+        <pre><br>bdi [text]</pre>
+
+        <h2><span class="alert">Alerts</span> (v1.4)</h2>
+        <h3 class="alert">Alerts are pretty useless at the moment</h3>
+        <button onclick="alert('this is an example alert')">example alert</button>
+
+
     </body>
 </html>
